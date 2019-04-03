@@ -76,7 +76,7 @@ class App extends Component {
     if(this.props!==undefined)
     { 
       this.hydrateStateWithLocalStorage();
-      if(this.props.location.state!==null){
+      if(this.props.location.state.name!==null){
       const updatedUsers=this.state.users.concat(this.props.location.state);
       this.setState({users:updatedUsers});
 
